@@ -76,7 +76,7 @@ const App = () => {
                     </View>
                     <Image
                         source={require('./assets/qrcode.png')}
-                        style={{ width: 30, height: 30 }}></Image>
+                        style={{ width: 65, height: 65, alignSelf: 'center' }}></Image>
                 </View>
             </View>
         </View>
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     section: {
         width: 380,
         height: 'auto',
-        borderWidth: 3,
+        borderWidth: 1.9,
         borderColor: '#597E8B',
         borderRadius: 10,
         padding: 15,
@@ -155,6 +155,13 @@ const styles = StyleSheet.create({
     },
     conteinerCracha: {
         flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: 'auto',
+        height: 'auto',
+        borderColor: '#ffffff',
+        borderWidth: 1,
+        borderRadius: 10,
+        padding: 10,
     },
     subtitulo: {
         color: '#ffffff',
@@ -162,15 +169,12 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontFamily: 'Gloock-Regular',
     },
-    conteinerCracha: {
-        width: 'auto',
-        height: 'auto',
-        borderColor: '#ffffff',
-        borderWidth: 2,
-        borderRadius: 10,
-        padding: 10,
+    textosInfo: {
+        color: '#ffffff',
+
     },
     info: {
         gap: 10,
+        color: '#FFFFFF',
     },
 });
